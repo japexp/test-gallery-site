@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онлайн Галерея — Главная</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.2/css/hover-min.css" integrity="sha512-46bV2Ap2isJ6w0KN2Y9QYHa+VKw4CKrbCkFcj0yJswKj4qYjH6kcoIYd5cTn5eJqfE1Y0j8q2lE1jQqYq0rE2Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="logo-bar" id="logoBar">
+        <a href="#top" class="logo hvr-grow" title="На главную">
+            <span class="logo-mark" aria-hidden="true"><img src="images/logo.png" alt="Логотип Онлайн Галерея"></span>
+            Онлайн Галерея
+        </a>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <input type="checkbox" id="navToggle" class="nav-toggle" style="position:absolute;left:-9999px;opacity:0;width:1px;height:1px;" aria-hidden="true" />
+            <label for="navToggle" class="hamburger hamburger-label" aria-label="Открыть меню"><span></span></label>
+            <ul class="menu">
+                <li><a href="main.html#overview" class="nav-link active">Главная</a></li>
+                <li><a href="epochs.html" class="nav-link">Эпохи</a></li>
+                <li><a href="artists.html" class="nav-link">Художники</a></li>
+                <li><a href="styles.html" class="nav-link">Направления</a></li>
+            </ul>
+            <label for="navToggle" class="nav-overlay" aria-hidden="true"></label>
+        </div>
+    </nav>
+
+    <main id="top">
+        <div class="spacer" aria-hidden="true"></div>
+
+        <section class="section hero" id="overview">
+            <div data-aos="fade-right">
+                <h1 class="hvr-grow">Онлайн Галерея: искусство сквозь эпохи и стили</h1>
+                <p>Погружение в мировое искусство: от Ренессанса до Модернизма. Откройте ключевые
+                направления, познакомьтесь с художниками и исследуйте коллекции ведущих галерей мира.</p>
+                <div class="cta">
+                    <a href="styles.html" class="btn hvr-grow">Изучить направления</a>
+                    <a href="epochs.html" class="btn hvr-grow">Перейти к эпохам</a>
+                </div>
+            </div>
+            <div class="hero-media" data-aos="fade-left">
+                <img class="hvr-grow" src="images/main.png" alt="Коллаж картин" loading="lazy" />
+            </div>
+        </section>
+
+        <section class="section" id="galleries">
+            <h2 data-aos="fade-up" class="hvr-grow">Мировые художественные галереи</h2>
+            <div class="gallery-list">
+                <div class="gallery-item" data-aos="fade-up" data-tooltip="Основана в 1824 году. Коллекция британского искусства XVIII–XX вв.">
+                    <img src="images/tate-britain.png" alt="Tate Britain" loading="lazy" />
+                    <div>
+                        <h4 class="hvr-grow">Tate Britain (Лондон)</h4>
+                        <div class="muted">Крупнейшая коллекция британского искусства от 1500-х до наших дней.</div>
+                    </div>
+                    <time class="muted">1824</time>
+                </div>
+
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="100" data-tooltip="Открыт в 1793. Огромная коллекция мирового искусства от древности до XX века.">
+                    <img src="images/luvr.png" alt="Louvre" loading="lazy" />
+                    <div>
+                        <h4 class="hvr-grow">Лувр (Париж)</h4>
+                        <div class="muted">Мировая сокровищница: от Древнего Востока до эпохи Наполеона.</div>
+                    </div>
+                    <time class="muted">1793</time>
+                </div>
+
+                <div class="gallery-item" data-aos="fade-up" data-aos-delay="200" data-tooltip="Открыт в 1937. Музей современного искусства с авангардными коллекциями.">
+                    <img src="images/moma.png" alt="MoMA" loading="lazy" />
+                    <div>
+                        <h4 class="hvr-grow">MoMA (Нью-Йорк)</h4>
+                        <div class="muted">Один из важнейших музеев современного искусства в мире.</div>
+                    </div>
+                    <time class="muted">1937</time>
+                </div>
+            </div>
+        </section>
+
+        <section class="section" id="contact">
+            <h2 data-aos="fade-up" class="hvr-grow">Контакты</h2>
+            <p data-aos="fade-up" class="muted">Связаться с нами: gallery@example.com</p>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 Онлайн Галерея
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+

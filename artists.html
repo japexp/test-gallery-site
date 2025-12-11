@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онлайн Галерея — Художники</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.2/css/hover-min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="logo-bar" id="logoBar">
+        <a href="index.html#top" class="logo hvr-grow" title="На главную">
+            <span class="logo-mark" aria-hidden="true"><img src="images/logo.png" alt=""></span>
+            Онлайн Галерея
+        </a>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <input type="checkbox" id="navToggle" class="nav-toggle" style="position:absolute;left:-9999px;opacity:0;width:1px;height:1px;" aria-hidden="true" />
+            <label for="navToggle" class="hamburger hamburger-label" aria-label="Открыть меню"><span></span></label>
+            <ul class="menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="epochs.html" class="nav-link">Эпохи</a></li>
+                <li><a href="artists.html" class="nav-link active">Художники</a></li>
+                <li><a href="styles.html" class="nav-link">Направления</a></li>
+            </ul>
+            <label for="navToggle" class="nav-overlay" aria-hidden="true"></label>
+        </div>
+    </nav>
+
+    <main id="top">
+        <div class="spacer" aria-hidden="true"></div>
+        <section class="section artists">
+            <h1 data-aos="fade-up" class="hvr-grow">Художники</h1>
+            <article class="artist-block" data-aos="fade-up">
+                <div class="artist-photo"><img src="images/artists/leonardo-da-vinchi.webp" alt="Леонардо да Винчи" loading="lazy"></div>
+                <div class="artist-info">
+                    <h2>Леонардо да Винчи</h2>
+                    <p>Леонардо ди сер Пьеро да Винчи (15 апреля 1452, Анкиано — 2 мая 1519, Амбуаз) — выдающийся итальянский художник, учёный, изобретатель, писатель, музыкант и анатом эпохи Высокого Возрождения. Признанный воплощением Homo Universalis (Универсальный Человек), да Винчи является одним из самых разносторонних гениев в истории человечества.</p>
+                    <div class="artist-works">
+                        <h3>Известные работы</h3>
+                        <ul>
+                            <li>Мона Лиза</li>
+                            <li>Тайная вечеря</li>
+                            <li>Мадонна в скалах</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="artist-block" data-aos="fade-up" data-aos-delay="100">
+                <div class="artist-photo"><img src="images/artists/rafael-santi.webp" alt="Рафаэль Санти" loading="lazy"></div>
+                <div class="artist-info">
+                    <h2>Рафаэль Санти</h2>
+                    <p>Рафаэ́ль Са́нти (итал. Raffaello Santi; 6 апреля 1483, Урбино — 6 апреля 1520, Рим) — великий итальянский живописец и архитектор эпохи Высокого Возрождения, прославившийся своей необычайной гармонией, ясностью формы и неоклассическим идеалом красоты. Наряду с Леонардо да Винчи и Микеланджело, он формирует триумвират величайших мастеров итальянского Ренессанса.</p>
+                    <div class="artist-works">
+                        <h3>Известные работы</h3>
+                        <ul>
+                            <li>Сикстинская Мадонна</li>
+                            <li>Афинская школа</li>
+                            <li>Портрет Бальдассаре Кастильоне</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="artist-block" data-aos="fade-up" data-aos-delay="200">
+                <div class="artist-photo"><img src="images/artists/miguel-angel.webp" alt="Микеланджело" loading="lazy"></div>
+                <div class="artist-info">
+                    <h2>Микеланджело</h2>
+                    <p>Микеланджело ди Лодовико Буонарроти Симони (6 марта 1475, Капрезе — 18 февраля 1564, Рим) — непревзойденный итальянский скульптор, живописец, архитектор и поэт эпохи Высокого Возрождения, чье творчество ознаменовало высшую точку развития классических идеалов и начало стиля маньеризм. Его личность, отличавшаяся силой духа и неистовой страстью к работе, была столь же монументальна, как и его произведения.</p>
+                    <div class="artist-works">
+                        <h3>Известные работы</h3>
+                        <ul>
+                            <li>Давид</li>
+                            <li>Сотворение Адама</li>
+                            <li>Страшный суд</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="artist-block" data-aos="fade-up" data-aos-delay="300">
+                <div class="artist-photo"><img src="images/artists/caravaggio.webp" alt="Караваджо" loading="lazy"></div>
+                <div class="artist-info">
+                    <h2>Караваджо</h2>
+                    <p>Микела́нджело Мери́зи да Карава́джо (итал. Michelangelo Merisi da Caravaggio; 29 сентября 1571, Милан — 18 июля 1610, Порто-Эрколе) — великий итальянский художник, чье революционное искусство ознаменовало собой начало эпохи барокко. Он известен своим радикальным реализмом, драматическим использованием света и тени, а также тем, что часто обращался к низшим слоям общества в качестве моделей для своих священных сюжетов.</p>
+                    <div class="artist-works">
+                        <h3>Известные работы</h3>
+                        <ul>
+                            <li>Призвание апостола Матфея</li>
+                            <li>Юдифь и Олоферн</li>
+                            <li>Ужин в Эммаусе</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="artist-block" data-aos="fade-up" data-aos-delay="400">
+                <div class="artist-photo"><img src="images/artists/Claude_Monet.webp" alt="Клод Моне" loading="lazy"></div>
+                <div class="artist-info">
+                    <h2>Клод Моне</h2>
+                    <p>Оскар-Клод Моне (фр. Oscar-Claude Monet; 14 ноября 1840, Париж — 5 декабря 1926, Живерни) — великий французский живописец, чье творчество стало синонимом импрессионизма. Именно его картина "Впечатление. Восход солнца" (Impression, soleil levant, 1872) дала название этому революционному художественному направлению, которое навсегда изменило восприятие света и цвета в искусстве.</p>
+                    <div class="artist-works">
+                        <h3>Известные работы</h3>
+                        <ul>
+                            <li>Впечатление. Восход солнца</li>
+                            <li>Кувшинки</li>
+                            <li>Руанский собор</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+            <article class="artist-block" data-aos="fade-up" data-aos-delay="500">
+                <div class="artist-photo"><img src="images/artists/Pablo_picasso.webp" alt="Пабло Пикассо" loading="lazy"></div>
+                <div class="artist-info">
+                    <h2>Пабло Пикассо</h2>
+                    <p>Па́бло Дие́го Хосе́ Франси́ско де Па́ула Хуа́н Непомусе́но Мари́я де лос Реме́диос Сиприа́но де ла Санти́сима Тринида́д Ма́ртир Патри́сио Руи́с и Пика́ссо (исп. Pablo Picasso; 25 октября 1881, Малага, Испания — 8 апреля 1973, Мужен, Франция) — испанский художник, скульптор, график, керамист и дизайнер, который считается самым влиятельным и универсальным художником XX века. Его феноменально долгая жизнь и творческий путь ознаменовались постоянным поиском и сменой стилей, что привело к серии художественных революций.</p>
+                    <div class="artist-works">
+                        <h3>Известные работы</h3>
+                        <ul>
+                            <li>Авиньонские девицы</li>
+                            <li>Герника</li>
+                            <li>Портрет Доры Маар</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>© 2025 Онлайн Галерея</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+

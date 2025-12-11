@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онлайн Галерея — Эпохи</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.2/css/hover-min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="logo-bar" id="logoBar">
+        <a href="index.html#top" class="logo hvr-grow" title="На главную">
+            <span class="logo-mark" aria-hidden="true"><img src="images/logo.png" alt=""></span>
+            Онлайн Галерея
+        </a>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <input type="checkbox" id="navToggle" class="nav-toggle" style="position:absolute;left:-9999px;opacity:0;width:1px;height:1px;" aria-hidden="true" />
+            <label for="navToggle" class="hamburger hamburger-label" aria-label="Открыть меню"><span></span></label>
+            <ul class="menu">
+                <li><a href="index.html" class="nav-link">Главная</a></li>
+                <li><a href="epochs.html" class="nav-link active">Эпохи</a></li>
+                <li><a href="artists.html" class="nav-link">Художники</a></li>
+                <li><a href="styles.html" class="nav-link">Направления</a></li>
+            </ul>
+            <label for="navToggle" class="nav-overlay" aria-hidden="true"></label>
+        </div>
+    </nav>
+
+    <main id="top">
+        <div class="spacer" aria-hidden="true"></div>
+        <section class="section epochs">
+            <h1 data-aos="fade-up" class="hvr-grow">Эпохи искусства</h1>
+            <article class="epoch-block" data-aos="fade-up">
+                <div class="epoch-info">
+                    <h2>Античность</h2>
+                    <p>Гармония формы и идеалы красоты, зарождение европейской культуры.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Фидий</li>
+                            <li>Поликлет</li>
+                            <li>Аполлодор</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/antique/persei-meduza.webp" alt="Персей и Медуза" loading="lazy">
+                        <img src="images/antique/rojdenie-veneri.webp" alt="Рождение Венеры" loading="lazy">
+                        <img src="images/antique/yudili-i-olofern.webp" alt="Юдифь и Олоферн" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+            <article class="epoch-block reversed" data-aos="fade-up" data-aos-delay="100">
+                <div class="epoch-info">
+                    <h2>Средневековье</h2>
+                    <p>Символизм, духовность, витражи и иконопись — искусство ради веры.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Дуччо</li>
+                            <li>Джотто</li>
+                            <li>Фра Анджелико</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/medieval/Christ-of-Mercy.webp" alt="Средневековье 1" loading="lazy">
+                        <img src="images/medieval/ducho.webp" alt="Средневековье 2" loading="lazy">
+                        <img src="images/medieval/Zemen-Monastery-frescoes.webp" alt="Средневековье 3" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+            <article class="epoch-block" data-aos="fade-up" data-aos-delay="200">
+                <div class="epoch-info">
+                    <h2>Ренессанс (Возрождение)</h2>
+                    <p>Гуманизм, линейная перспектива и гении Леонардо, Рафаэля и Микеланджело.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Леонардо да Винчи</li>
+                            <li>Рафаэль</li>
+                            <li>Микеланджело</li>
+                            <li>Сандро Боттичелли</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/renessans/The-creation-of-man.webp" alt="Ренессанс 1" loading="lazy">
+                        <img src="images/renessans/Mona_Lisa,_by_Leonardo_da_Vinci,_from_C2RMF_retouched.webp" alt="Ренессанс 2" loading="lazy">
+                        <img src="images/renessans/Vesna_Bottichelli_polnyj.webp" alt="Ренессанс 3" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+            <article class="epoch-block reversed" data-aos="fade-up" data-aos-delay="300">
+                <div class="epoch-info">
+                    <h2>Барокко</h2>
+                    <p>Драматизм, контраст света и тени, эмоциональные композиции.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Караваджо</li>
+                            <li>Джан Лоренцо Бернини</li>
+                            <li>Питер Пауль Рубенс</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/barocco/christ-mocked.webp" alt="Барокко 1" loading="lazy">
+                        <img src="images/barocco/liutnist.webp" alt="Барокко 2" loading="lazy">
+                        <img src="images/barocco/19125_Peter_Paul_Rubens_-_Sleeping_Silenus1.width-1290.webp" alt="Барокко 3" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+            <article class="epoch-block" data-aos="fade-up" data-aos-delay="400">
+                <div class="epoch-info">
+                    <h2>Классицизм</h2>
+                    <p>Строгость формы, апелляция к античным идеалам и гармонии.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Жак-Луи Давид</li>
+                            <li>Жан-Огюст-Доминик Энгр</li>
+                            <li>Антонио Канова</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/classicism/Живопись_Жак-Луи-Давид_Смерть-Сократа-1787.webp" alt="Классицизм 1" loading="lazy">
+                        <img src="images/classicism/napoleon.webp" alt="Классицизм 2" loading="lazy">
+                        <img src="images/classicism/canova.webp" alt="Классицизм 3" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>© 2025 Онлайн Галерея</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+

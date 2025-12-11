@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Онлайн Галерея — Направления</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/hover.css/2.3.2/css/hover-min.css" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="logo-bar" id="logoBar">
+        <a href="index.html#top" class="logo hvr-grow" title="На главную">
+            <span class="logo-mark" aria-hidden="true"><img src="images/logo.png" alt=""></span>
+            Онлайн Галерея
+        </a>
+    </div>
+
+    <nav class="navbar" id="navbar">
+        <div class="nav-inner">
+            <input type="checkbox" id="navToggle" class="nav-toggle" style="position:absolute;left:-9999px;opacity:0;width:1px;height:1px;" aria-hidden="true" />
+            <label for="navToggle" class="hamburger hamburger-label" aria-label="Открыть меню"><span></span></label>
+            <ul class="menu">
+                <li><a href="index.html#overview" class="nav-link">Главная</a></li>
+                <li><a href="epochs.html" class="nav-link">Эпохи</a></li>
+                <li><a href="artists.html" class="nav-link">Художники</a></li>
+                <li><a href="styles.html" class="nav-link active">Направления</a></li>
+            </ul>
+            <label for="navToggle" class="nav-overlay" aria-hidden="true"></label>
+        </div>
+    </nav>
+
+    <main id="top">
+        <div class="spacer" aria-hidden="true"></div>
+        <section class="section epochs">
+            <h1 data-aos="fade-up" class="hvr-grow">Направления искусства</h1>
+            <article class="epoch-block" data-aos="fade-up">
+                <div class="epoch-info">
+                    <h2>Кубизм</h2>
+                    <p>Геометризация формы, множественные ракурсы и аналитический подход.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Пабло Пикассо</li>
+                            <li>Жорж Брак</li>
+                            <li>Хуан Грис</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/directions/cubism/picasso-ambuas.webp" alt="Кубизм 1" loading="lazy">
+                        <img src="images/directions/cubism/picasso-student.webp" alt="Кубизм 2" loading="lazy">
+                        <img src="images/directions/cubism/portrait-picasso.webp" alt="Кубизм 3" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+
+            <article class="epoch-block reversed" data-aos="fade-up" data-aos-delay="100">
+                <div class="epoch-info">
+                    <h2>Сюрреализм</h2>
+                    <p>Подсознание, сновидческие образы и соединение несочетаемого.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Сальвадор Дали</li>
+                            <li>Рене Магритт</li>
+                            <li>Макс Эрнст</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/directions/surrealism/iskushenie-sviatogo-antonio.webp" alt="Сюрреализм 1" loading="lazy">
+                        <img src="images/directions/surrealism/rene-magritte-the-son-of-man.webp" alt="Сюрреализм 2" loading="lazy">
+                        <img src="images/directions/surrealism/roots.webp" alt="Сюрреализм 3" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+
+            <article class="epoch-block" data-aos="fade-up" data-aos-delay="200">
+                <div class="epoch-info">
+                    <h2>Модернизм</h2>
+                    <p>Поиск новых форм выражения, отказ от традиционных канонов.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Эдуар Мане</li>
+                            <li>Клод Моне</li>
+                            <li>Василий Кандинский</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/directions/modernism/eduar-mane-zzavtrak-v-masterskoi.webp" alt="Модернизм 1" loading="lazy">
+                        <img src="images/directions/modernism/ruanskiy-sobor-clod-mone.webp" alt="Модернизм 2" loading="lazy">
+                        <img src="images/directions/modernism/vasiliy-kandinskiy-kompozicia.webp" alt="Модернизм 3" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+
+            <article class="epoch-block reversed" data-aos="fade-up" data-aos-delay="300">
+                <div class="epoch-info">
+                    <h2>Концептуализм</h2>
+                    <p>Идея и контекст важнее визуальной формы произведения.</p>
+                    <div class="epoch-artists">
+                        <h3>Знаковые мастера</h3>
+                        <ul>
+                            <li>Джозеф Кошут</li>
+                            <li>Марсель Дюшан</li>
+                            <li>Сол Левитт</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="epoch-gallery" data-gallery>
+                    <button class="gallery-btn prev" type="button" aria-label="Предыдущее изображение">‹</button>
+                    <div class="gallery-track">
+                        <img src="images/directions/conceptualism/joseph-koshut-odin-i-tri-stula.webp" alt="Концептуализм 1" loading="lazy">
+                        <img src="images/directions/conceptualism/joseph-loshut-private-language.webp" alt="Концептуализм 2" loading="lazy">
+                        <img src="images/directions/conceptualism/marsel-dushan-l.h.o.o.q.webp" alt="Концептуализм 3" loading="lazy">
+                    </div>
+                    <button class="gallery-btn next" type="button" aria-label="Следующее изображение">›</button>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>© 2025 Онлайн Галерея</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
